@@ -16,10 +16,11 @@ class _MyOutlineButtonState extends State<MyOutlineButton> {
   }
   @override
   Widget build(BuildContext context) {
-    return OutlineButton(
+    return OutlinedButton(
             onPressed: outlineButtonFunc,
-            child: Text(outlineButtonString),
-            color: Colors.blue,
+            child: Text(outlineButtonString,style: TextStyle(color: Colors.white),),
+            style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.black),
+            ),
           );
   }
 }

@@ -20,10 +20,10 @@ class _MyFlatcButtonState extends State<MyFlatcButton> {
   }
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return ElevatedButton(
       onPressed: myFlatcButtonFunc,
-      color: Colors.blue,
-      child:  Text(myFlatcButton),
+      
+      child:  Text(myFlatcButton,),
     );
   }
 }
